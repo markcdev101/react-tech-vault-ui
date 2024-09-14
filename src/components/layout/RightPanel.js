@@ -2,16 +2,16 @@
 import React from 'react';
 import './RightPanel.css';
 
-function RightPanel() {
+function RightPanel({ sections, activeSection }) {
   return (
     <div className="right-panel">
       <h3>Contents</h3>
       <ul>
-        <li><a href="#guide">Guide</a></li>
-        <li><a href="#installation">Installation</a></li>
-        <li><a href="#concepts">Concepts</a></li>
-        <li><a href="#examples">Examples</a></li>
-        <li><a href="#references">References</a></li>
+        {sections.map(section => (
+          <li key={section.id} className={section.id === activeSection ? 'active' : ''}>
+            <a href={`#section-${section.id}`}>{section.title}</a>
+          </li>
+        ))}
       </ul>
     </div>
   );

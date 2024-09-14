@@ -71,4 +71,8 @@
     z-index: 999; /* Ensure it stays on top of the main content but below the top panel */
     overflow: hidden; /* Prevent scrolling in the right panel */
   }
+
+  html {
+    scroll-behavior: smooth;
+  }
   
