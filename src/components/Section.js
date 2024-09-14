@@ -9,7 +9,7 @@ const Section = ({ title, content }) => (
           {title}
         </Text>
       </Card.Section>
-      <Card.Section>
+      <Card.Section style={{ textAlign: 'left' }}>
         {content}
       </Card.Section>
     </Card>
