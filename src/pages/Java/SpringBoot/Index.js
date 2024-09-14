@@ -4,6 +4,7 @@ import SpringBootGuide from './Guide';
 import SpringBootExamples from './Examples';
 import Section from '../../../components/Section';
 import SpringBootConcepts from './Concepts';
+import SpringBootReferences from './References';
 
 
 const SpringBootIndex = () => (
@@ -24,6 +25,11 @@ const SpringBootIndex = () => (
     <Section
       title="Examples"
       content={<SpringBootExamples />}
+    />
+
+<Section
+      title="References"
+      content={<SpringBootReferences />}
     />
   </div>
 );
