@@ -3,6 +3,7 @@ import SpringBootInstallation from './Installation';
 import SpringBootGuide from './Guide';
 import SpringBootExamples from './Examples';
 import Section from '../../../components/Section';
+import SpringBootConcepts from './Concepts';
 
 
 const SpringBootIndex = () => (
@@ -15,6 +16,10 @@ const SpringBootIndex = () => (
     <Section
       title="Installation"
       content={<SpringBootInstallation />}
+    />
+    <Section
+      title="Concepts"
+      content={<SpringBootConcepts />}
     />
     <Section
       title="Examples"
