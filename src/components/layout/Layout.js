@@ -1,5 +1,6 @@
 // src/components/Layout.js
 import React, { useState, useEffect } from 'react';
+import { useLocation } from 'react-router-dom'; // Import useLocation
 import SidePanel from './SidePanel';
 import TopPanel from './TopPanel';
 import RightPanel from './RightPanel';
@@ -8,6 +9,7 @@ import './Layout.css';
 function Layout({ children }) {
   const [activeSection, setActiveSection] = useState('');
   const [sections, setSections] = useState([]);
+  const location = useLocation(); // Get current location
 
   useEffect(() => {
     // Function to find sections dynamically
@@ -47,6 +49,9 @@ function Layout({ children }) {
     return () => window.removeEventListener('scroll', handleScroll);
   }, [sections]);
 
+  // Determine if we should show the Right Panel
+  const showRightPanel = location.pathname !== '/';
+
   return (
     <div className="layout">
       <TopPanel /> {/* Fixed Top Panel */}
@@ -60,7 +65,7 @@ function Layout({ children }) {
           </main>
         </div>
         
-        <RightPanel sections={sections} activeSection={activeSection} /> {/* Dynamic Right Panel */}
+        {showRightPanel && <RightPanel sections={sections} activeSection={activeSection} />} {/* Conditionally Render Right Panel */}
       </div>
     </div>
   );
