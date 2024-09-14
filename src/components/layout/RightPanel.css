@@ -1,0 +1,30 @@
+.right-panel {
+    position: sticky;
+    top: 0;
+    overflow-y: auto;
+  }
+  
+  .right-panel h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  
+  .right-panel ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .right-panel li {
+    margin: 10px 0;
+  }
+  
+  .right-panel a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .right-panel a:hover {
+    text-decoration: underline;
+    color: #6200ea;
+  }
+  
