@@ -1,4 +1,5 @@
 import { Container, Grid, Card, Text, Title, Button } from '@mantine/core';
+import { Link } from 'react-router-dom';
 
 export default function Home() {
   return (
@@ -47,7 +48,9 @@ export default function Home() {
               <Text mt="md" color="dimmed">
                 Get started with Spring Boot for building production-ready applications with ease.
               </Text>
-              <Button mt="md" variant="outline">Explore</Button>
+              <Button component={Link} to="/java/spring-boot" mt="md" variant="outline">
+                Explore
+              </Button>
             </Card>
 
             {/* Quarkus Card */}

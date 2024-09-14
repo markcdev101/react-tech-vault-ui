@@ -1,27 +1,21 @@
-import logo from './logo.svg';
 import './App.css';
-import '@mantine/core/styles.css';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 import Home from './pages/Home';
+import SpringBootIndex from './pages/Java/SpringBoot/Index';
+import '@mantine/core/styles.css';
 
 function App() {
   return (
     <div className="App">
-      {/* <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header> */}
-      <Home></Home>
+      {/* Wrap everything inside the Router */}
+      <Router>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/java/spring-boot" element={<SpringBootIndex />} />
+          {/* You can add more routes as needed */}
+        </Routes>
+      </Router>
     </div>
   );
 }
