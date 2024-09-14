@@ -1,14 +1,14 @@
-// src/pages/Java/React/Index.js
 import React from 'react';
 import ReactGuide from './Guide';
 import ReactInstallation from './Installation';
 import ReactConcepts from './Concepts';
 import ReactExamples from './Examples';
 import ReactReferences from './References';
+import Section from '../../../components/Section';
 
 const ReactIndex = () => (
   <div>
-    <h1>Spring Boot</h1>
+    <h1>React</h1>
     <Section
       id="guide"  // Add id to match right panel navigation
       title="Guide"

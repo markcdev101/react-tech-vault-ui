@@ -18,6 +18,11 @@ function SidePanel() {
               Spring Boot
             </NavLink>
           </li>
+          <li>
+            <NavLink to="/javascript/react" activeClassName="active">
+              React
+            </NavLink>
+          </li>
           {/* Add more links as necessary */}
         </ul>
       </nav>

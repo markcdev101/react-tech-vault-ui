@@ -166,6 +166,18 @@ export default function Home() {
               </Text>
               <Button mt="md" variant="outline">Explore</Button>
             </Card>
+
+
+            {/* React Card */}
+            <Card shadow="sm" padding="lg" style={{ flex: '1 1 300px', minWidth: 300 }}>
+              <Title order={3}>React</Title>
+              <Text mt="md" color="dimmed">
+                Get started with React
+              </Text>
+              <Button component={Link} to="/javascript/react" mt="md" variant="outline">
+                Explore
+              </Button>
+            </Card>
           </Grid>
         </Grid.Col>
       </Grid>
