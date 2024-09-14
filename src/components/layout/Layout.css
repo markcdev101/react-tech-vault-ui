@@ -1,0 +1,78 @@
+/* Layout.css */
+
+.layout {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow: hidden; /* Prevent the entire page from scrolling */
+  }
+  
+  /* Extend Top Panel across the entire width */
+  .top-panel {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    background-color: #4864e2;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000; /* Stay above other content */
+  }
+  
+  .layout-content {
+    display: flex;
+    flex: 1;
+    margin-top: 60px; /* Push down content to avoid overlapping Top Panel */
+  }
+  
+  /* Fixed Left Side Panel */
+  .side-panel {
+    position: fixed;
+    top: 60px;
+    left: 0;
+    bottom: 0;
+    width: 250px;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    z-index: 999;
+    overflow-y: auto; /* Allow the side panel to scroll if needed */
+  }
+  
+  /* Scrollable Content Wrapper */
+  .content-wrapper {
+    flex: 1;
+    height: calc(100vh - 60px); /* Take up full height minus the top panel */
+    margin-left: 250px; /* Leave space for the fixed side panel */
+    margin-right: 250px; /* Leave space for the fixed right panel */
+    overflow-y: auto; /* Main content scrolling */
+  }
+  
+  /* Scrollable Main Content */
+  .main-content {
+    flex: 1;
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  /* Fixed Right Panel that starts below the Top Panel */
+  .right-panel {
+    position: fixed;
+    top: 60px; /* Start right below the top panel */
+    right: 0;
+    width: 250px;
+    height: calc(100vh - 60px); /* Ensure the right panel takes up the full height */
+    background-color: #f0f0f0;
+    padding: 20px;
+    box-shadow: -2px 0px 5px rgba(0, 0, 0, 0.1);
+    z-index: 999; /* Ensure it stays on top of the main content but below the top panel */
+    overflow: hidden; /* Prevent scrolling in the right panel */
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+  
