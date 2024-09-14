@@ -1,5 +1,10 @@
 // src/pages/Java/Template/Index.js
 import React from 'react';
+import TemplateGuide from './Guide';
+import TemplateInstallation from './Installation';
+import TemplateConcepts from './Concepts';
+import TemplateExamples from './Examples';
+import TemplateReferences from './References';
 
 const TemplateIndex = () => (
   <div>
