@@ -5,7 +5,7 @@ import './TopPanel.css';
 function TopPanel() {
   return (
     <div className="top-panel">
-      <h1>My React App</h1>
+      <h1>Tech Vault</h1>
     </div>
   );
 }
