@@ -5,7 +5,7 @@ import './TopPanel.css';
 function TopPanel() {
   return (
     <div className="top-panel">
-      <h1>Tech Vault</h1>
+      <h1>Tech Vault - Your Trusted Vault of Tech Knowledge</h1>
     </div>
   );
 }
