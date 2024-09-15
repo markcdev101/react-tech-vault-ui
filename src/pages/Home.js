@@ -1,4 +1,4 @@
-import { Container, Grid, Card, Text, Title, Button } from '@mantine/core';
+import { Container, Grid, Card, Text, Title, Button, Image } from '@mantine/core';
 import { Link } from 'react-router-dom';
 
 export default function Home() {
@@ -45,6 +45,13 @@ export default function Home() {
             {/* Spring Boot Card */}
             <Card shadow="sm" padding="lg" style={{ flex: '1 1 300px', minWidth: 300 }}>
               <Title order={3}>Spring Boot</Title>
+              <Card.Section>
+                <Image
+                  src="https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/images/bg-8.png"
+                  height={160}
+                  alt="Norway"
+                />
+              </Card.Section>
               <Text mt="md" color="dimmed">
                 Get started with Spring Boot for building production-ready applications with ease.
               </Text>
@@ -58,6 +65,95 @@ export default function Home() {
               <Title order={3}>Quarkus</Title>
               <Text mt="md" color="dimmed">
                 Discover Quarkus for high-performance Java applications with a focus on Kubernetes and GraalVM.
+              </Text>
+              <Button mt="md" variant="outline">Explore</Button>
+            </Card>
+          </Grid>
+        </Grid.Col>
+      </Grid>
+
+      {/* JavaScript Section */}
+      <Grid spacing="md" mt="xl">
+        <Grid.Col span={12}>
+          <Title order={2}>JavaScript</Title>
+        </Grid.Col>
+        <Grid.Col span={12}>
+          <Grid
+            sx={(theme) => ({
+              display: 'flex',
+              gap: theme.spacing.md,
+              overflowX: 'auto',
+              padding: '1rem 0',
+            })}
+          >
+            {/* JavaScript Basics Card */}
+            <Card shadow="sm" padding="lg" style={{ flex: '1 1 300px', minWidth: 300 }}>
+              <Title order={3}>JavaScript Basics</Title>
+              <Text mt="md" color="dimmed">
+                Get started with JavaScript programming basics.
+              </Text>
+              <Button mt="md" variant="outline">Explore</Button>
+            </Card>
+
+            {/* Advanced JavaScript Card */}
+            <Card shadow="sm" padding="lg" style={{ flex: '1 1 300px', minWidth: 300 }}>
+              <Title order={3}>Advanced JavaScript</Title>
+              <Text mt="md" color="dimmed">
+                Explore advanced JavaScript topics and techniques.
+              </Text>
+              <Button mt="md" variant="outline">Explore</Button>
+            </Card>
+
+
+            {/* React Card */}
+            <Card shadow="sm" padding="lg" style={{ flex: '1 1 300px', minWidth: 300 }}>
+              <Title order={3}>React</Title>
+              <Card.Section>
+                <Image
+                  src="https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/images/bg-8.png"
+                  height={160}
+                  alt="Norway"
+                />
+              </Card.Section>
+              <Text mt="md" color="dimmed">
+                Get started with React
+              </Text>
+              <Button component={Link} to="/javascript/react" mt="md" variant="outline">
+                Explore
+              </Button>
+            </Card>
+          </Grid>
+        </Grid.Col>
+      </Grid>
+
+      {/* Cloud Section */}
+      <Grid spacing="md" mt="xl">
+        <Grid.Col span={12}>
+          <Title order={2}>Cloud</Title>
+        </Grid.Col>
+        <Grid.Col span={12}>
+          <Grid
+            sx={(theme) => ({
+              display: 'flex',
+              gap: theme.spacing.md,
+              overflowX: 'auto',
+              padding: '1rem 0',
+            })}
+          >
+            {/* AWS Setup Card */}
+            <Card shadow="sm" padding="lg" style={{ flex: '1 1 300px', minWidth: 300 }}>
+              <Title order={3}>Amazon Web Services</Title>
+              <Text mt="md" color="dimmed">
+                Guide to setting up and configuring SQL databases.
+              </Text>
+              <Button mt="md" variant="outline">Explore</Button>
+            </Card>
+
+            {/* Digital Ocean Card */}
+            <Card shadow="sm" padding="lg" style={{ flex: '1 1 300px', minWidth: 300 }}>
+              <Title order={3}>Digital Ocean</Title>
+              <Text mt="md" color="dimmed">
+                Learn to write and optimize SQL queries.
               </Text>
               <Button mt="md" variant="outline">Explore</Button>
             </Card>
@@ -135,52 +231,7 @@ export default function Home() {
         </Grid.Col>
       </Grid>
 
-      {/* JavaScript Section */}
-      <Grid spacing="md" mt="xl">
-        <Grid.Col span={12}>
-          <Title order={2}>JavaScript</Title>
-        </Grid.Col>
-        <Grid.Col span={12}>
-          <Grid
-            sx={(theme) => ({
-              display: 'flex',
-              gap: theme.spacing.md,
-              overflowX: 'auto',
-              padding: '1rem 0',
-            })}
-          >
-            {/* JavaScript Basics Card */}
-            <Card shadow="sm" padding="lg" style={{ flex: '1 1 300px', minWidth: 300 }}>
-              <Title order={3}>JavaScript Basics</Title>
-              <Text mt="md" color="dimmed">
-                Get started with JavaScript programming basics.
-              </Text>
-              <Button mt="md" variant="outline">Explore</Button>
-            </Card>
 
-            {/* Advanced JavaScript Card */}
-            <Card shadow="sm" padding="lg" style={{ flex: '1 1 300px', minWidth: 300 }}>
-              <Title order={3}>Advanced JavaScript</Title>
-              <Text mt="md" color="dimmed">
-                Explore advanced JavaScript topics and techniques.
-              </Text>
-              <Button mt="md" variant="outline">Explore</Button>
-            </Card>
-
-
-            {/* React Card */}
-            <Card shadow="sm" padding="lg" style={{ flex: '1 1 300px', minWidth: 300 }}>
-              <Title order={3}>React</Title>
-              <Text mt="md" color="dimmed">
-                Get started with React
-              </Text>
-              <Button component={Link} to="/javascript/react" mt="md" variant="outline">
-                Explore
-              </Button>
-            </Card>
-          </Grid>
-        </Grid.Col>
-      </Grid>
     </Container>
   );
 }
