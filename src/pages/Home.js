@@ -85,10 +85,10 @@ export default function Home() {
         </Grid.Col>
       </Grid>
 
-      {/* JavaScript Section */}
+      {/* JavaScript - FrontEnd Section */}
       <Grid spacing="md" mt="xl">
         <Grid.Col span={12}>
-          <Title order={2}>JavaScript</Title>
+          <Title order={2}>JavaScript - FrontEnd</Title>
         </Grid.Col>
         <Grid.Col span={12}>
           <Grid
@@ -152,6 +152,53 @@ export default function Home() {
               <Button component={Link} to="/javascript/angular" mt="md" variant="outline" disabled>
                 Explore
               </Button>
+            </Card>
+          </Grid>
+        </Grid.Col>
+      </Grid>
+
+      {/* JavaScript - Backend Section */}
+      <Grid spacing="md" mt="xl">
+        <Grid.Col span={12}>
+          <Title order={2}>JavaScript - Backend</Title>
+        </Grid.Col>
+        <Grid.Col span={12}>
+          <Grid
+            sx={(theme) => ({
+              display: 'flex',
+              gap: theme.spacing.md,
+              overflowX: 'auto',
+              padding: '1rem 0',
+            })}
+          >
+            {/* Node.js Card */}
+            <Card shadow="sm" padding="lg" style={{ flex: '1 1 300px', minWidth: 300 }}>
+              <Title order={3}>Node.js</Title>
+              <Image
+                src="/img/HomePage/node.js-logo.png"
+                height={160}
+                alt="Node.js"
+                style={{ objectFit: 'contain', width: '100%', filter: 'grayscale(100%)', opacity: 0.5, }}
+              />
+              <Text mt="md" color="dimmed">
+                Build scalable network applications with Node.js.
+              </Text>
+              <Button mt="md" variant="outline" disabled>Explore</Button>
+            </Card>
+             {/* Node.js Card */}
+             <Card shadow="sm" padding="lg" style={{ flex: '1 1 300px', minWidth: 300 }}>
+              <Title order={3}>Express.js</Title>
+              <Image
+                src="/img/HomePage/express.js-logo.png"
+                height={160}
+                alt="Node.js"
+                style={{ objectFit: 'contain', width: '100%', filter: 'grayscale(100%)', opacity: 0.5, }}
+              />
+              <Text mt="md" color="dimmed">
+                Express is a minimal and flexible Node.js web application framework that provides a robust of features
+                for web and mobile applications.
+              </Text>
+              <Button mt="md" variant="outline" disabled>Explore</Button>
             </Card>
           </Grid>
         </Grid.Col>
@@ -611,37 +658,7 @@ export default function Home() {
         </Grid.Col>
       </Grid>
 
-      {/* Node.js Section */}
-      <Grid spacing="md" mt="xl">
-        <Grid.Col span={12}>
-          <Title order={2}>Node.js</Title>
-        </Grid.Col>
-        <Grid.Col span={12}>
-          <Grid
-            sx={(theme) => ({
-              display: 'flex',
-              gap: theme.spacing.md,
-              overflowX: 'auto',
-              padding: '1rem 0',
-            })}
-          >
-            {/* Node.js Card */}
-            <Card shadow="sm" padding="lg" style={{ flex: '1 1 300px', minWidth: 300 }}>
-              <Title order={3}>Node.js</Title>
-              <Image
-                src="/img/HomePage/node.js-logo.png"
-                height={160}
-                alt="Node.js"
-                style={{ objectFit: 'contain', width: '100%', filter: 'grayscale(100%)', opacity: 0.5, }}
-              />
-              <Text mt="md" color="dimmed">
-                Build scalable network applications with Node.js.
-              </Text>
-              <Button mt="md" variant="outline" disabled>Explore</Button>
-            </Card>
-          </Grid>
-        </Grid.Col>
-      </Grid>
+      
 
     </Container>
   );

@@ -3,7 +3,8 @@
     background-color: #333;
     color: white;
     padding: 20px;
-    height: 100%;
+    height: 100vh; /* Viewport height */
+    overflow-y: auto; /* Enable scrolling if content overflows */
   }
   
   .side-panel ul {
@@ -22,5 +23,21 @@
   
   .side-panel a.active {
     font-weight: bold;
+  }
+
+  .nav-link.disabled {
+    color: grey;
+    cursor: not-allowed;
+    text-decoration: none;
+  }
+  
+  .nav-link {
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  .nav-link.active {
+    font-weight: bold;
+    color: blue;
   }
   
