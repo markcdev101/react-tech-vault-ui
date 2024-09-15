@@ -6,6 +6,7 @@ import SpringBootIndex from './pages/Java/SpringBoot/Index';
 import Layout from './components/layout/Layout';
 import ReactIndex from './pages/JavaScript/React/Index';
 import '@mantine/core/styles.css';
+import GitHubIndex from './pages/GitRepositories/GitHub/Index';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/java/spring-boot" element={<SpringBootIndex />} />
             <Route path="/javascript/react" element={<ReactIndex />} />
+            <Route path="/gitrepositories/github" element={<GitHubIndex />} />
             {/* Add more routes as needed */}
           </Routes>
         </Layout>
