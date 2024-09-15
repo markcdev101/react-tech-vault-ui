@@ -31,18 +31,18 @@ You can now open the project in your IDE and build it using Maven or Gradle.`
       value: 'command-line',
       label: 'Command Line',
       language: 'bash',  // Bash for command line instructions
-      content: `To create and install a Spring Boot project using the command line, run the following commands:
+      content: `# To create and install a Spring Boot project using the command line, run the following commands:
 
 curl -s https://start.spring.io/starter.zip \\
 -d dependencies=web,security \\
 -d name=myapp \\
 -o myapp.zip
 
-Once downloaded, unzip the project and navigate to the project folder:
+# Once downloaded, unzip the project and navigate to the project folder:
 unzip myapp.zip
 cd myapp
 
-To build and run your project, use the following command:
+# To build and run your project, use the following command:
 ./mvnw spring-boot:run`
     },
     {
