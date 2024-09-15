@@ -69,7 +69,7 @@ const sections = [
     sectionTitle: 'GIT Repositories',
     subSections: [
       { title: 'Bitbucket', path: '/gitrepositories/bitbucket', disabled: true },
-      { title: 'GitHub', path: '/gitrepositories/github', disabled: true },
+      { title: 'GitHub', path: '/gitrepositories/github', disabled: false },
       { title: 'GitLab', path: '/gitrepositories/gitlab', disabled: true },
     ],
   },

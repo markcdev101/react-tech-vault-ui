@@ -492,12 +492,12 @@ export default function Home() {
                 src="/img/HomePage/github-logo.png"
                 height={160}
                 alt="GitHub"
-                style={{ objectFit: 'contain', width: '100%', filter: 'grayscale(100%)', opacity: 0.5, }}
+                style={{ objectFit: 'contain', width: '100%'}}
               />
               <Text mt="md" color="dimmed">
                 Host and review code with GitHub.
               </Text>
-              <Button mt="md" variant="outline" disabled>Explore</Button>
+              <Button component={Link} to="/gitrepositories/github" mt="md" variant="outline">Explore</Button>
             </Card>
 
             {/* GitLab Card */}
