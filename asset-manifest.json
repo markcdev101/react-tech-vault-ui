@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/react-tech-vault-ui/static/css/main.580b8842.css",
+    "main.js": "/react-tech-vault-ui/static/js/main.1f656b13.js",
+    "static/js/453.ade5b1f5.chunk.js": "/react-tech-vault-ui/static/js/453.ade5b1f5.chunk.js",
+    "index.html": "/react-tech-vault-ui/index.html",
+    "main.580b8842.css.map": "/react-tech-vault-ui/static/css/main.580b8842.css.map",
+    "main.1f656b13.js.map": "/react-tech-vault-ui/static/js/main.1f656b13.js.map",
+    "453.ade5b1f5.chunk.js.map": "/react-tech-vault-ui/static/js/453.ade5b1f5.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.580b8842.css",
+    "static/js/main.1f656b13.js"
+  ]
+}
